@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Postulante 1</title>
+  <link rel="stylesheet" href="stylescv.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Menú</h2>
+    <a href="Sitio WEB CV.html">Galería</a>
+    <a href="Alumnoacerca.html">Acerca de</a>
+    <hr>
+    <a href="Alumno1.html" class="active">Postulante 1</a>
+    <a href="Alumno2.html">Postulante 2</a>
+    <a href="Alumno3.html">Postulante 3</a>
+
+    <button class="toggle" onclick="toggleMode()">Modo oscuro</button>
+  </aside>
+
+  <main class="content">
+    <h1>Postulante 1</h1>
+
+    <div class="card">
+      <img src="https://img.freepik.com/psd-premium/iconos-3d-ocupacion-trabajo-avatar-adecuado-tu-foto-perfil-redes-sociales_373791-2558.jpg" alt="Alumno 1" class="foto-alumno">
+      <p><strong>Nombre:</strong> Luis Fernando Martínez López</p>
+      <p><strong>Edad:</strong> 25</p>
+      <p><strong>Carrera:</strong> Programación</p>
+      <p><strong>Correo:</strong> LuisF@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Lenguajes que maneja:</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Portafolio</h2>
+      <ul>
+        <li>Proyecto 1</li>
+        <li>Proyecto 2</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>

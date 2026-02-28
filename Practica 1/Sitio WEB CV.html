@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Postulantes</title>
+  <link rel="stylesheet" href="stylescv.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Menú</h2>
+    <a href="Sitio WEB CV.html" class="active">Galería</a>
+    <a href="Alumnoacerca.html">Acerca de</a>
+    <hr>
+    <a href="Alumno1.html">Postuante 1</a>
+    <a href="Alumno2.html">Postulante 2</a>
+    <a href="Alumno3.html">Postulante 3</a>
+
+    <button class="toggle" onclick="toggleMode()">Modo oscuro</button>
+  </aside>
+
+  <main class="content">
+    <h1>Galería de Postulantes</h1>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img src="https://img.freepik.com/psd-premium/iconos-3d-ocupacion-trabajo-avatar-adecuado-tu-foto-perfil-redes-sociales_373791-2558.jpg" alt="Alumno 1" class="foto-alumno">
+        <h3>Luis Fernando Martínez López</h3>
+        <p>Ingeniería en Sistemas</p>
+        <p>Edad: 25</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.freepik.com/psd-premium/iconos-3d-ocupacion-trabajo-avatar-adecuado-tu-foto-perfil-redes-sociales_373791-2576.jpg" alt="Alumno 2" class="foto-alumno">
+      <h3>Ana Sofía Hernández Cruz</h3>
+      <p>Ingeniería en Computacion</p>
+      <p>Edad: 23</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.freepik.com/psd-premium/iconos-3d-ocupacion-trabajo-avatar-adecuado-tu-foto-perfil-redes-sociales_373791-2567.jpg" alt="Alumno 3" class="foto-alumno">
+        <h3>Carlos Eduardo Ramírez Torres</h3>
+        <p>Programación</p>
+        <p>Edad: 26</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
