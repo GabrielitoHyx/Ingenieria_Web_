@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postulante 1</title>
+  <link rel="stylesheet" href="stylescv.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Menú</h2>
+    <a href="Sitio WEB CV.html" class="">Galería</a>
+    <a href="Alumnoacerca.html" class="">Acerca de</a>
+    <hr>
+    <a href="Alumno1.html" class="active">Postulante 1</a>
+    <a href="Alumno2.html" class="">Postulante 2</a>
+    <a href="Alumno3.html" class="">Postulante 3</a>
+    <button class="toggle" onclick="toggleMode()" id="modoBoton">🌙 Modo oscuro</button>
+  </aside>
+  <main class="content">
+    <h1>Postulante 1</h1>
+<div class="card">
+  <img src="https://img.freepik.com/psd-premium/iconos-3d-ocupacion-trabajo-avatar-adecuado-tu-foto-perfil-redes-sociales_373791-2558.jpg" alt="Alumno 1" class="foto-alumno">
+  <p><strong>Nombre:</strong> Luis Fernando Martínez López</p>
+  <p><strong>Edad:</strong> 25</p>
+  <p><strong>Carrera:</strong> Programación</p>
+  <p><strong>Correo:</strong> LuisF@gmail.com</p>
+</div>
+<div class="card">
+  <h2>Habilidades</h2>
+  <ul>
+        <li>Lenguajes que maneja:</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+  </ul>
+</div>
+<div class="card">
+  <h2>Portafolio</h2>
+  <ul>
+    <li>Proyecto 1</li>
+    <li>Proyecto 2</li>
+  </ul>
+</div>
+  </main>
+</div>
+<script>
+function aplicarModo() {
+    const modo = localStorage.getItem("modo");
+    const boton = document.getElementById("modoBoton");
+
+    if (modo === "oscuro") {
+        document.body.classList.add("dark");
+
+        if (boton) {
+            boton.textContent = "☀️ Modo claro";
+        }
+    } else {
+        document.body.classList.remove("dark");
+
+        if (boton) {
+            boton.textContent = "🌙 Modo oscuro";
+        }
+    }
+}
+
+function toggleMode() {
+    const modoActual = localStorage.getItem("modo");
+
+    if (modoActual === "oscuro") {
+        localStorage.setItem("modo", "claro");
+    } else {
+        localStorage.setItem("modo", "oscuro");
+    }
+
+    aplicarModo();
+}
+
+aplicarModo();
+</script>
+</body>
+</html>
